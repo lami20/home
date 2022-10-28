@@ -1,0 +1,130 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Navbar with Searchbox</title> -->
+      <link rel="shortcut icon" href="{% static 'images/logo.ico' %}" type="image/x-icon" />
+      <link rel="stylesheet" href="Homecrwd.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+   </head>
+   <body>
+      <section class="first-page">
+         <nav>
+            <ul>
+               <li class="logo">CROWDFUNDING</li>
+               <li class="btn"><span class="fas fa-bars"></span></li>
+               <div class="items">
+                  <li><a href="{% url 'home' %}">Découvrir</a></li>
+                  <li><a href="{% url 'about' %}">Qui sommes nous?</a></li>
+                  <li><a href="{% url 'action' %}">Lancer une action</a></li>
+                  <li><a href="{% url 'login' %}">Sign in|up</a></li>
+
+               </div>
+            </ul>
+         </nav>
+         <div class="slidershow middle">
+
+            <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <div class="slide s1">
+               <img src="19.jpg" alt="">
+            </div>
+            <div class="slide">
+               <img src="21.jpg" alt="">
+            </div>
+            <div class="slide">
+               <img src="17.jpg" alt="">
+            </div>
+            <div class="slide">
+               <img src="24.jpg" alt="">
+            </div>
+            <div class="slide">
+               <img src="23.jpg" alt="">
+            </div>
+            </div>
+      
+            <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+            </div>
+         </div>
+      </section>
+    
+
+       <section class="activite">
+         <h1>Nos valeurs</h1>
+         <p>Investir dans votre futur et celui de votre société! </p>
+         <div class=row>
+             <div class="activite-col">
+                <h3>Solidarité</h3>
+                <p>En se décentrant de soi-même et en se rapprochant des autres, faire du bien autour de soi permet paradoxalement de faire la paix avec soi-même. Lorsque vous vous sentez nerveux et dépassé par les événements, il est donc bon de donner de sa personne. </p>
+            </div>
+             <div class="activite-col">
+                <h3>Engagement</h3>
+                <p>S'engager pour une association va vous permettre d'élargir votre réseau grâce à de nombreuses rencontres avec des personnes qui partagent les mêmes valeurs ou les mêmes envies que vous. En tant que bénévole, vous allez vous sentir utile et vos missions donnerons du sens à votre vie.
+            </div>
+             <div class="activite-col">
+                <h3>Patriotisme</h3>
+                <p>L'homme devenant presque un citoyen à part entière est redevable à sa communauté contre toutes formes d'agressions tendant à détruire cette nouvelle harmonie nationale. Ainsi, l'amour de la patrie est la source du sentiment national et permet de relier les hommes dans une nation.</p>
+            </div>
+         </div>
+          </section>
+          <section class="enviro"> 
+            <h1>Crowdfunding?</h1>
+            <p>Le Crowdfunding est un terme anglais utilisé pour parler du “ financement participatif”, le Crowdfunding existe depuis maintenant de nombreuses années. Sa définition générale ne change pas : il s'agit du financement de projets donnés par un grand nombre de personnes (particuliers, entreprises ...).</p>
+         </section>
+
+         <section class="cta">
+            <div class="contact">
+               <h1>Pour Toutes Autres Informations<br> Contactez Nous!</h1>
+               <a href="" class="connect">Crowdfunding@gmail.com</a>
+            </div>
+            
+         </section>
+
+         <section class="categories"> 
+          
+            <nav>
+             <ul>
+               <div class="categ">
+            <h1>Choisissez dans quoi investir!</h1>
+                <div class="icons">
+                  <i class='fas fa-graduation-cap' style="font-size:48px;color:#7472BB"></i>
+                  <i class="fa fa-medkit" style="font-size:48px;color:#7472BB"></i>
+                  <i class="fa fa-home" aria-hidden="true" style="font-size:48px;color:#7472BB"></i>
+                  <i class="fa fa-globe" aria-hidden="true" style="font-size:48px;color:#7472BB"></i>
+                </div>
+            
+               </div>
+             </ul>
+           </nav>
+      
+         </section>
+
+         <section class="footer">
+          <h4>A Propos</h4>   
+          <p>CROWDFUNDING est une application maroccaine à but non lucratif</p>
+         </section>
+
+     
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+      </script>
+   </body>
+</html>
